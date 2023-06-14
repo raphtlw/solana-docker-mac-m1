@@ -11,10 +11,10 @@ unfortunately the bozos at Microsoft don't want to support ARM64 so you'll have 
 ## Quickstart
 
 ```shell
-curl https://github.com/raphtlw/solana-docker-mac-m1/archive/refs/heads/main.tar.gz -O solana-docker-mac-m1.tar.gz
+curl https://github.com/raphtlw/solana-docker-mac-m1/archive/refs/heads/main.tar.gz -sSLf -o solana-docker-mac-m1.tar.gz
 mkdir -p solana-docker-mac-m1
 cd solana-docker-mac-m1
-tar -xvf ../solana-docker-mac-m1.tar.gz
+tar -xvf ../solana-docker-mac-m1.tar.gz --strip-components=1
 docker build . -t raphtlw/solana
 ```
 
